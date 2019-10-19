@@ -16,6 +16,8 @@
 		3068A7492341B1F60084573D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3068A7482341B1F60084573D /* main.m */; };
 		3068A7532341B1F70084573D /* iOSTestProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3068A7522341B1F70084573D /* iOSTestProjectTests.m */; };
 		3068A75E2341B1F70084573D /* iOSTestProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3068A75D2341B1F70084573D /* iOSTestProjectUITests.m */; };
+		30B37556235AF9B700465A94 /* listChart.json in Resources */ = {isa = PBXBuildFile; fileRef = 30B37555235AF9B700465A94 /* listChart.json */; };
+		30B3755A235AFA0700465A94 /* StackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B37559235AFA0700465A94 /* StackViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,10 @@
 		3068A7592341B1F70084573D /* iOSTestProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSTestProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3068A75D2341B1F70084573D /* iOSTestProjectUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSTestProjectUITests.m; sourceTree = "<group>"; };
 		3068A75F2341B1F70084573D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30B37554235AF96C00465A94 /* iOSTestPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iOSTestPrefixHeader.pch; sourceTree = "<group>"; };
+		30B37555235AF9B700465A94 /* listChart.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = listChart.json; sourceTree = "<group>"; };
+		30B37558235AFA0700465A94 /* StackViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StackViewController.h; sourceTree = "<group>"; };
+		30B37559235AFA0700465A94 /* StackViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StackViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +110,7 @@
 		3068A7352341B1F50084573D /* iOSTestProject */ = {
 			isa = PBXGroup;
 			children = (
+				30B37557235AF9EB00465A94 /* UIStackView */,
 				3068A76B2341B2C70084573D /* Block */,
 				3068A7362341B1F50084573D /* AppDelegate.h */,
 				3068A7372341B1F50084573D /* AppDelegate.m */,
@@ -111,11 +118,13 @@
 				3068A73A2341B1F50084573D /* SceneDelegate.m */,
 				3068A73C2341B1F50084573D /* ViewController.h */,
 				3068A73D2341B1F50084573D /* ViewController.m */,
+				30B37555235AF9B700465A94 /* listChart.json */,
 				3068A73F2341B1F50084573D /* Main.storyboard */,
 				3068A7422341B1F60084573D /* Assets.xcassets */,
 				3068A7442341B1F60084573D /* LaunchScreen.storyboard */,
 				3068A7472341B1F60084573D /* Info.plist */,
 				3068A7482341B1F60084573D /* main.m */,
+				30B37554235AF96C00465A94 /* iOSTestPrefixHeader.pch */,
 			);
 			path = iOSTestProject;
 			sourceTree = "<group>";
@@ -143,6 +152,15 @@
 			children = (
 			);
 			path = Block;
+			sourceTree = "<group>";
+		};
+		30B37557235AF9EB00465A94 /* UIStackView */ = {
+			isa = PBXGroup;
+			children = (
+				30B37558235AFA0700465A94 /* StackViewController.h */,
+				30B37559235AFA0700465A94 /* StackViewController.m */,
+			);
+			path = UIStackView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,6 +266,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30B37556235AF9B700465A94 /* listChart.json in Resources */,
 				3068A7462341B1F60084573D /* LaunchScreen.storyboard in Resources */,
 				3068A7432341B1F60084573D /* Assets.xcassets in Resources */,
 				3068A7412341B1F50084573D /* Main.storyboard in Resources */,
@@ -275,6 +294,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30B3755A235AFA0700465A94 /* StackViewController.m in Sources */,
 				3068A73E2341B1F50084573D /* ViewController.m in Sources */,
 				3068A7382341B1F50084573D /* AppDelegate.m in Sources */,
 				3068A7492341B1F60084573D /* main.m in Sources */,
@@ -449,6 +469,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E9HT8X9BW8;
+				GCC_PREFIX_HEADER = /Users/yuming/Github/iOSTestProject/iOSTestProject/iOSTestProject/iOSTestPrefixHeader.pch;
 				INFOPLIST_FILE = iOSTestProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -466,6 +487,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E9HT8X9BW8;
+				GCC_PREFIX_HEADER = /Users/yuming/Github/iOSTestProject/iOSTestProject/iOSTestProject/iOSTestPrefixHeader.pch;
 				INFOPLIST_FILE = iOSTestProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

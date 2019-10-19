@@ -1,8 +1,8 @@
 //
 //  ViewController.h
-//  iOSTestProject
+//  iOSOpenGLDemo
 //
-//  Created by WangQi on 2019/9/30.
+//  Created by WangQi on 2019/10/16.
 //  Copyright © 2019 $(PRODUCT_NAME). All rights reserved.
 //
 
